@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap入門</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <script src="js/jquery-1.11.1.min.js" defer></script>
+  <script src="js/bootstrap.min.js" defer></script>
+</head>
+<!-- <body> -->
+<body style="padding-top: 50px;">
+
+  <!-- ページ上部のナビゲーション -->
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+
+        <!-- ページ幅が狭い場合の折りたたみメニューボタン -->
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <!-- 一番左上のタイトル文字列 -->
+        <a href="#" class="navbar-brand">Bootstrap入門</a>
+      </div>
+
+      <!-- ナビゲーション -->
+      <div class="collapse navbar-collapse" id="collapse-navbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Overview</a></li>
+          <li class=""      ><a href="style.html">Style</a></li>
+          <li class=""      ><a href="#">UI Components</a></li>
+          <li class=""      ><a href="#">Responsive</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- タイトル画面 -->
+  <div id="title" class="jumbotron">
+    <div class="container">
+      <div class="col-xs-12">
+        <h3>プログラマでもできるカッコイイデザイン!</h3>
+        <h1>Bootstrap入門</h1>
+      </div>
+      <!-- <div class="hidden-xs hidden-sm col-md-4"> -->
+      <!--   hogehoge -->
+      <!-- </div> -->
+    </div>
+  </div>
+  <div>&nbsp;</div><div>&nbsp;</div>
+
+  <div class="container">
+  <div class="row">
+  <div class="col-xs-12">
+
+  <div id="overview">
+    <h2>Bootstrapとは</h2>
+    <h3>
+    <ul>
+      <li>Webページ作成のためのライブラリ
+        <ul><li><a href="http://getbootstrap.com/">http://getbootstrap.com/</a></ul><br>
+      <li>簡単にカッコイイWebページが作れます
+    </ul>
+    </h3>
+  </div>
+  <div>&nbsp;</div><div>&nbsp;</div>
+
+  <div id="bootstrap-does">
+    <h2>何ができるの？</h2>
+    <h3>
+    <ul>
+      <li>全体的なスタイル<br>
+      <li>様々な部品<br>
+      <li>レスポンシブデザインの仕組み
+        <ul>
+          <li>レスポンシブデザイン:<br>
+              画面の大きさに応じてレイアウトを変える
+        </ul>
+    </ul>
+    </h3>
+  </div>
+  <div>&nbsp;</div><div>&nbsp;</div>
+
+  </div> <!-- .col-xs-12 -->
+  </div> <!-- .row -->
+  </div> <!-- .container -->
+</body>
+</html>
+<!-- Local variables: -->
+<!--   indent-tabs-mode: nil -->
+<!-- End:-->
