@@ -10,6 +10,12 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <script src="js/jquery-1.11.1.min.js" defer></script>
   <script src="js/bootstrap.min.js" defer></script>
+
+  <style>
+    pre {
+      font-size: large;
+    }
+  </style>
 </head>
 <!-- <body> -->
 <body style="padding-top: 50px;">
@@ -73,11 +79,106 @@
     <h2>Bootstrapを使うと</h2>
     <h3>
     <ul>
-      <li>大体は、何もしなくてもレスポンシブになる<br>&nbsp;
+      <li>レスポンシブにするためのクラス<br>&nbsp;
       <li>CSSを複数用意しなくても、HTMLだけでレスポンシブにできる。
     </ul>
     </h3>
   </div>
+  <div>&nbsp;</div><div>&nbsp;</div>
+
+  <div id="grid">
+    <h2>段組み</h2>
+    <h3>
+    <ul>
+      <li>Bootstrapでは、段組みを基本としたレイアウトを行う<br>&nbsp;
+      <li>画面サイズを4種類に分け、それぞれ段組みを指定
+    </ul>
+    </h3>
+
+    <table class="table table-bordered">
+      <tr>
+        <th>
+        <th>xs (Extra Small)
+        <th>sm (Small)
+        <th>md (Medium)
+        <th>lg (Large)
+      </tr>
+      <tr>
+        <th>画面幅
+        <td>～767px
+        <td>768px ～ 991px
+        <td>992px ～ 1199px
+        <td>1200px ～
+      </tr>
+    </table>
+
+    <h3>
+    <ul>
+      <li>段組みは、画面幅を12とした相対サイズで指定 (例: 3:9の2段組、4:4:4の3段組)
+    </ul>
+    </h3>
+  <div>&nbsp;</div><div>&nbsp;</div>
+
+    <h3>例1: xsでは縦に並べる。それより大きい場合は横に並べる。</h3>
+    <pre>&lt;div class="row"&gt;
+  <span class="text-info">&lt;div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"&gt;
+    &hellip;
+  &lt;/div&gt;</span>
+  <span class="text-warning">&lt;div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"&gt;
+    &hellip;
+  &lt;/div&gt;</span>
+&lt;/div&gt;</pre>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 bg-info text-center">
+        <br><br><br>1<br><br><br>&nbsp;
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 bg-warning text-center">
+        <br><br><br>2<br><br><br>&nbsp;
+      </div>
+    </div>
+
+    <h3>例2: sm以上の場合、目次を表示する</h3>
+    <pre>&lt;div class="row"&gt;
+  <span class="text-info">&lt;div class="col-xs-12 col-sm-5 col-md-5 col-lg-5"&gt;
+    &hellip;
+  &lt;/div&gt;</span>
+  <span class="text-warning">&lt;div class="col-xs-12 col-sm-5 col-md-5 col-lg-5"&gt;
+    &hellip;
+  &lt;/div&gt;</span>
+  <span class="text-success">&lt;div class="hidden-xs col-sm-2 col-md-2 col-lg-2"&gt;
+    目次
+    &hellip;
+  &lt;/div&gt;</span>
+&lt;/div&gt;</pre>
+    <div class="row">
+      <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5 bg-info text-center">
+        <br><br><br>1<br><br><br>&nbsp;
+      </div>
+      <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5 bg-warning text-center">
+        <br><br><br>2<br><br><br>&nbsp;
+      </div>
+      <div class="hidden-xs col-sm-2 col-md-2 col-lg-2 bg-success">
+        目次
+        <ul>
+          <li>aaa
+          <li>bbb
+          <li>&hellip;
+        </ul>
+      </div>
+    </div>
+
+  </div>
+  <div>&nbsp;</div><div>&nbsp;</div>
+
+  <div id="end">
+    <h2>まとめ</h2>
+    <h3>
+    Bootstrapでは、
+    <ul>
+      <li>CSSをゴリゴリ書かなくてもカッコいいデザインができる<br>&nbsp;
+      <li>単一のHTMLで様々な画面サイズに対応するレスポンシブデザインができる
+    </ul>
+    </h3>
   <div>&nbsp;</div><div>&nbsp;</div>
 
   <h2 class="pull-right">ご清聴ありがとうございました</h2>
